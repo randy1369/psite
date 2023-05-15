@@ -629,13 +629,14 @@ header.sticky{
     .home-text h1{
         font-size: 2rem;
     }
+    
 
     }
     .home{
-        height: 72vh;
+        height: 80vh;
     }
     .about{
-        height: 70vh;
+        height: 80vh;
 
 
     .contact {
