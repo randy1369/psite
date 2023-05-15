@@ -271,11 +271,6 @@ header.sticky{
     width: 100%;
     background-size: cover;
     background-position: center;
-    display: grid;
-    /* position: relative; */
-    align-items: center;
-    /* justify-content: flex-start;
-    flex-wrap: wrap; */
 }
 
 .main-text{
@@ -297,8 +292,8 @@ header.sticky{
 }
 
 .row{
-    position: relative;
-    overflow: hidden;
+    /* position: relative;
+    overflow: hidden; */
     border-radius: 8px;
     cursor: pointer;
 }
@@ -376,6 +371,7 @@ header.sticky{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
+    margin-bottom: 5rem;
     /* position: relative; */
     /* display: flex; */
     /* justify-content: flex-start;
@@ -471,7 +467,7 @@ header.sticky{
     color: var(--main-color);
 
 }
-
+/* ==================================END===================================================================== */
 .end{
     padding: 20px 15%;
     display: flex;
@@ -523,7 +519,7 @@ header.sticky{
 
 @media (max-width: 1100px) {
     :root{
-        --big-font:4rem;
+        --big-font:2rem;
         --h2-font:2rem;
         --p-font:1rem;
         transition: .1s;
@@ -543,6 +539,7 @@ header.sticky{
     .contact{
         height: 87vh;
     }
+
     }
 
 }
@@ -560,8 +557,14 @@ header.sticky{
         height: auto;
         max-width: 100%;
     }
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
     .contact{
         grid-template-columns: 1fr;
+    }
+    .end{
+        padding-top: 25%;
     }
 
 }
@@ -594,4 +597,48 @@ header.sticky{
     .navlist.open{
         top: 100%;
     }
+    .end{
+        padding-top: 30%;
+    }
+}
+
+@media (max-width:666px){
+    .projects-content{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .end{
+        padding-top: 30%;
+    }
+    .last-text{
+        padding-top: 30px;
+    }
+
+}
+
+@media (max-width:600px){
+    .end{
+        padding-top: 40%;
+    }
+
+}
+
+@media (max-width:420px){
+    .end{
+        padding-top: 60%;
+    .last-text{
+        padding-top: 30px;
+    }
+    }
+
+}
+
+@media (max-width:336px){
+    .end{
+        padding-top: 70%;
+    .last-text{
+        padding-top: 30px;
+    }
+    }
+
 }

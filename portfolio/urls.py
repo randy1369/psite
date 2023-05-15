@@ -14,4 +14,4 @@ urlpatterns = [
         path('ecom', views.ecom,name='ecom'),
         path('scraper', views.scraper, name='scraper'),
         path('vs',views.videoS,name='vs'),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
