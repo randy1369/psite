@@ -629,6 +629,19 @@ header.sticky{
         display: grid;
     }
     
+    .home-text h1{
+        font-size: 2rem;
+    }
+
+    }
+    .home{
+        height: 67vh;
+    }
+    .about{
+        height: 67vh;
+
+
+
     .contact {
         grid-column: 1 / -1; /* Span the full width of the grid */
         grid-row: 3;

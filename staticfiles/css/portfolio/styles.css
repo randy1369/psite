@@ -594,6 +594,9 @@ header.sticky{
     .navlist.open{
         top: 100%;
     }
+    .end{
+        padding-top: 30%;
+    }
 }
 
 @media (max-width:666px){
@@ -623,6 +626,18 @@ header.sticky{
         display: grid;
     }
     
+    .home-text h1{
+        font-size: 2rem;
+    }
+
+    }
+    .home{
+        height: 67vh;
+    }
+    .about{
+        height: 67vh;
+
+
     .contact {
         grid-column: 1 / -1; /* Span the full width of the grid */
         grid-row: 3;
