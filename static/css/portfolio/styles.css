@@ -623,17 +623,27 @@ header.sticky{
 
 }
 
-@media (max-width:420px){
+@media (max-width:424px){
+    .projects-content {
+        grid-template-columns: repeat(2,1fr); /* Set projects content to a single column */
+        display: grid;
+    }
+    
+    .contact {
+        grid-column: 1 / -1; /* Span the full width of the grid */
+        grid-row: 3;
+    }
+
     .end{
-        padding-top: 60%;
+        padding-top: 30%;
     .last-text{
-        padding-top: 30px;
+        padding-top: 10px;
     }
     }
 
 }
 
-@media (max-width:336px){
+/* @media (max-width:336px){
     .end{
         padding-top: 70%;
     .last-text{
@@ -641,4 +651,4 @@ header.sticky{
     }
     }
 
-}
+} */
