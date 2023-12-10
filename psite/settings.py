@@ -129,12 +129,11 @@ STATICFILES_DIRS = [
 
 
 
-# define the directory where uploaded media files will be stored
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 # define the URL prefix for uploaded media files
 MEDIA_URL = '/media/'
 
+# define the directory where uploaded media files will be stored
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Default primary key field type

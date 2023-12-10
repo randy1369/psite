@@ -1,0 +1,149 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1b043a;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #1b043a;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+/* Header Design */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #272a33;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .logo {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .x {
+    color: #ff8c00;
+  }
+  
+  .navlist {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navlist li {
+    margin-right: 30px;
+  }
+  
+  .navlist li:last-child {
+    margin-right: 0;
+  }
+  
+  .navlist a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .navlist a:hover {
+    color: #ff8c00;
+  }
+  
+  #menu-icon {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #242f3e;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    z-index: 1;
+  }
+  
+  .dropdown li {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .navlist {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60px; /* Adjust this value based on your header height */
+      left: 0;
+      width: 100%;
+      background-color: #242f3e;
+      padding: 0;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+  
+    .navlist.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    .navlist li {
+      margin-bottom: 10px;
+    }
+  
+    #menu-icon {
+      display: block;
+    }
+  
+    .bx-x {
+      display: none;
+    }
+  }
+  
+  
+
+
+
+

@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>My Portfolio</title>
+    
     <link rel="stylesheet" href="{% static '/css/portfolio/styles.css' %}">
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/portfolio/responsive.css' %}">
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
 
 </head>
 <body>
+
     <!-- Header Design -->
     <header>
         <a href="{% url 'portfolio:x' %}" class="logo">Ro<span class="x">X</span>y.</a>
@@ -33,46 +37,86 @@
 
 
     
-            <!-- Home Section Design -->
-            <section class="home" id="home">
-                <!-- Home content here -->
-                <div class="home-text">
+    <section class="home" id="home">
+        <div class="home-content">
 
-                    <div class="slide">
-                        <span class="one" style="color: aliceblue;">Hello, </span>
-                        <span class="two" style="color: aliceblue;">  I'm</span>
-                    </div>
+          <div class="home-text">
 
-                    <h1>Rocky</h1>
-                    <h3>Software <span>Developer.</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa exercitationem magni ut doloribus eos fugit eum tenetur optio nostrum quos libero labore porro placeat dolor itaque quas veniam, veritatis suscipit!</p>
-                    
-                    <div class="button">
-                        <a href="#about" class="btn">About Me</a>
-                        <a href="#" class="btn2"><span><i class='bx bxs-download'></i></span>Resume</a>
-                    </div>
-                
-                </div>
-            </section>
+            <div class="slide">
+              <span class="one" style="color: rgb(52, 53, 54);">Hello, </span>
+              <span class="two" style="color: rgb(45, 47, 48);">I'm</span>
+            </div>
+
+            <h1>Rocky</h1>
+            <h3>Software <span>Developer.</span></h3>
+            <p>Code composer and web enthusiast. Bringing creativity to life with Django, Flask, and a touch of magic. Let's code dreams into reality!</p>
+
+            <div class="button">
+              <a href="#about" class="btn">About Me</a>
+              <a href="{{ MEDIA_URL }}/media/ROX.pdf" class="btn2"><span><i class='bx bxs-download'></i></span>Resume</a>
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+      
             
 
             <!-- About Section Design -->
-            <section class="about" id="about">
-                <!-- About Me content here -->
-                <div class="about-img">
-                <!-- <img src="{% static 'images/about3.jpg' %}" alt=""> -->
-                <img src="{% static '/images/LDN1.png' %}" alt="">
-                </div>
+            <article class="about" id="about">
+                <div class="about-content">
+                    <div class="about-img">
+                        <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                        <dotlottie-player src="https://lottie.host/56de7755-4643-410f-8f9d-c6c0193df878/6pHVCORtTV.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
+                     -->
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-                <div class="about-text">
-                    <h2>About    <span>Me</span></h2>
-                    <h4>Software Developer!</h4>
-                    <p>I'm a passionate software developer with a love for technology, design, and Video editing. with expertise in linux, web development, data structures and algorithms, i'm constantly exploring new technologies and techniques to improve my skills and create elegant solutions to complex problems.</p>
-                    <a href="#projects" class="btn">More About</a>
-                </div>
-
-            </section>
+                        <dotlottie-player class="lottie-player" src="https://lottie.host/ac1e06dd-340a-4e39-a68b-f14385253199/f7wJTNcU9v.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    </div>
             
+                    <div class="about-text">
+                        <h2>About <span>Me</span></h2>
+                        <h4>Software Developer!</h4>
+                        <p>I'm a passionate software developer with a love for technology, design, and video editing. With expertise in Linux, web development, data structures, and algorithms, I'm constantly exploring new technologies and techniques to improve my skills and create elegant solutions to complex problems.</p>
+                        <a href="#skills" class="btn">More About</a>
+                    </div>
+                </div>
+            </article>
+            
+            
+            
+           
+            <!-- Skills Section Design -->
+            <section class="skills" id="skills">
+                <div class="skill-content">
+
+                    <div class="skill-image">
+                        <!-- Your Lottie animation code remains the same -->
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                        <dotlottie-player  class="lottie-player" src="https://lottie.host/5e748f4b-4fb7-46bd-bf90-072df0d6630f/KIM7m0Uvbp.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    </div>
+
+                    <div class="skill-text">
+                        <h2>My Skills</h2>
+
+                        <ul>
+                            <li>👩‍💻 Programming Languages: Python, JavaScript</li>
+                            <li>📊 Web Development: Django, Flask, HTML, CSS, Bootstrap</li>
+                            <li>🔍 Data Manipulation: Beautiful Soup, Pandas</li>
+                            <li>📚 Version Control: Git, Bitbucket, GitHub</li>
+                            <li>🗄️ Databases: PostgreSQL, MongoDB, MySQL</li>
+                            <li>☁️ Cloud Services: AWS, Azure</li>
+                            <li>🚀 Deployment and Virtualization: Docker, Heroku</li>
+                            <li>🐧 Operating Systems: Linux, Windows</li>
+                        </ul>
+
+                        <a href="#projects" class="btn">Projects</a>
+                    </div>
+
+
+                </div>
+            </section>
 
 
             <!-- Projects Section Design -->
@@ -137,10 +181,18 @@
                         </div>
                     </div>
 
+
+                    <div class="top">
+                        <a href="#contact"><i class='bx bx-down-arrow-alt'></i></a>
+                    </div>
+
+
                 </div>
+             
 
             </section>
             
+            <!-- contact section -->
             <section class="contact" id="contact">
                 <!-- Contact content here -->
                 <div class="contact-text">
@@ -164,7 +216,6 @@
                 
                 </div>
 
-
                 <div class="contact-form">
                     <form action="">
                         <input type="name" placeholder="Your Name" required>
@@ -177,8 +228,8 @@
 
             </section>
 
-
             <!-- End Section Design -->
+            
             <section class="end">
                 <div class="last-text">
                     <p>Copyright © 2023 by Roxy All Rights Reserved.</p>
@@ -187,8 +238,6 @@
                     <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
                 </div>
             </section>
-
-
 
 
     <!-- custom js link -->

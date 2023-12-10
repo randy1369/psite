@@ -1,0 +1,299 @@
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+
+        /* navbar */
+
+        #menu-icon{
+            display: block;
+        }
+       
+       .navlist{
+            position: absolute;
+            top: -1000px;
+            right: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-color);
+            text-align: left;
+            transition: all .45s ease;
+        }
+       
+       .navlist a{
+            display: block;
+            margin: 16px;
+            font-size: 20px;
+            transition: all .45s ease;
+            color: var(--text-color);
+       }
+       
+       .navlist a:hover{      
+            color: var(--main-color);    
+       }
+       
+       .navlist.open{   
+             top: 100%;   
+       }
+               
+       .end{          
+            padding-top: 30%;       
+       }
+
+       .home-text h1{
+        font-size: 2rem;
+       }
+
+       .home-text h3{
+        font-size: 1.5rem;
+       }
+
+       .home-text p{
+        font-size: 0.8rem;
+       }
+
+       /* about section */
+       .about{
+        padding: 20% 15%;
+       }
+
+        .about-content {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+         }
+
+         .about-text {
+            text-align: center; /* Center the text */
+           
+        }
+
+        .about-text p{
+            text-align: center; /* Center the text */
+            font-size: 13px;
+        }
+
+        .lottie-player {
+            width: 300px; /* Make the Lottie animation full width */
+            height: 300px; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Add some spacing between Lottie animation and text */
+        }
+
+        .about-text .btn {
+            margin-top: 20px;
+        }
+
+
+      /*  skills section */
+
+    /* Skills Section */
+    .skills {
+        padding: 10% 15%;
+    }
+
+    .skill-content {
+        padding-left: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .lottie-player {
+        width: 300px;
+        height: 300px;
+    }
+
+    .skill-text {
+        margin-bottom: 10px;
+        text-align: center;
+        /* padding-left: 100px; */
+    }
+
+    .skill-text h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .skill-text ul {
+        padding: 0;
+        text-align: left;
+    }
+
+    .skill-text li {
+        padding-left: 20px;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .skill-text .btn {
+        margin-top: 20px;
+    }
+
+
+    /* Project Section */
+    .main-text {
+        text-align: center; /* Center align text for better mobile layout */
+        
+    }
+
+    .main-text h2 {
+        font-size: 15px; /* Adjust font size for better visibility on smaller screens */
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .projects-content {
+        grid-template-columns: repeat(2,1fr);
+        display: grid;
+    }
+
+    .projects {
+        padding: 15%; /* Adjust padding for better spacing on smaller screens */
+    }
+
+
+    /* Contact section */
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
+        
+
+
+}
+
+
+/* ====================================================================================== */
+
+/* Tablet and Desktop Styles (768px and above) */
+@media (min-width: 768px) and (max-width: 999px) {
+    /* Navbar */
+    .navlist {
+        position: relative;
+        top: 0;
+        flex-direction: row;
+        background: transparent;
+        text-align: center;
+    }
+
+    .navlist a {
+        display: inline-block;
+        margin: 0 16px;
+        font-size: 17px;
+    }
+
+    .navlist.open {
+        top: 0;
+    }
+
+    .end {
+        padding-top: 0;
+    }
+
+    /* About Section */
+    .about{
+        padding: 15%;
+    }
+
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .lottie-player{
+        height: 250px;
+        width: 250px;
+    }
+
+    .about-text {
+        text-align: center;
+        padding-left: 6px;
+    }
+
+    .about-text p{
+        font-size: 13px;
+    }
+
+
+    .about-text .btn {
+        margin-top: 0;
+    }
+
+    /* Skills Section */
+    .skills {
+        padding: 15%;
+    }
+
+    .skill-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .skill-image {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .lottie-player {
+        padding-left: 0;
+        width: 300px;
+        height: 300px;
+    }
+
+    .skill-text {
+        margin-bottom: 0;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .skill-text h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .skill-text ul {
+        padding: 0;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .skill-text li {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .skill-text .btn {
+        margin-top: 0;
+    }
+
+    /* Project Section */
+    .main-text h2 {
+        font-size: var(--h2-font);
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .projects-content {
+        grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+        display: grid;
+    }
+
+    .projects {
+        padding: 10%;
+    }
+
+    /* Contact Section */
+    .contact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form {
+        padding: 0;
+    }
+
+    .contact-text h4 {
+        margin: 0;
+    }
+
+    .list {
+        margin-bottom: 0;
+    }
+}

@@ -7,11 +7,12 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+
 :root{
-    --bg-color: #000000;
+    --bg-color: rgb(17, 2, 16);
     --second-bg-color: #0B0605;
     --text-color:#f0eeee;
-    --second-color:#ffffff;
+    --second-color:#cac9c9;
     --main-color:#ff3d05;
     --big-font: 3rem;
     --h2-font: 2rem;
@@ -38,6 +39,7 @@ header{
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
 }
+
 .logo{
     color: var(--text-color);
     font-size: 30px;
@@ -59,6 +61,7 @@ span{
 .navlist{
     display: flex;
 }
+
 .navlist a{
     color: var(--second-color);
     font-size: 17px;
@@ -66,9 +69,11 @@ span{
     margin: 0 25px;
     transition: all .45s ease;
 }
+
 .navlist a:hover{
     color: var(--main-color);
 }
+
 .navlist a.active{
     color: var(--main-color);
 }
@@ -84,51 +89,45 @@ span{
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-/* 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-  } */
 
  
 /* ======================================================Home Section====================================================== */
 
-
-
-section{
-    padding: 70px 15% 120px;
+section {
+    height: 100vh; /* Set height to full viewport height */
+    padding: 23% 15%;
     background: var(--bg-color);
 }
-.home{
-    position: relative;
-    height: 115vh;
-    width: 100%;
-    background-image: url("/static/images/mr4.jpg");
-    background-size: cover;
-    background-position: center;
+
+
+.home {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
+    height: 100vh;
 }
 
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .slide{
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
-/* .one{
+.one{
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 5px;
+    margin-top: 30px;
     height: 32px;
-    padding: 0 15px;
-    line-height: 32px;
-    font-size: 20px;
     font-weight: 500;
-    border-radius: 5px;
-    border-color: #ff3d05;
-    color: var(--text-color);
-} */
+
+}
 
 .two{
     display: inline-block;
@@ -218,82 +217,125 @@ header.sticky{
 
 /* ======================================================About Section====================================================== */
 
+
 .about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100%;
+    padding: 15%;
+    display: flex;
+    align-items: center;
+   
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 5rem;
-    background-image: url("/static/images/mr2.jpg");
-    height: 115vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
 }
 
-.about-img img{
-    display: grid;
-    height: 300px;
-    width: 500px;
-    border-radius: 8px;
+.lottie-player {
+    width: 400px;
+    height: 400px;
+    /* Add any additional styles you need */
 }
 
-
+/* Your existing styles for .about-text h2, .about-text h4, .about-text p, etc. */
 .about-text h2{
     font-size: 25;
     line-height: 1;
+
 }
 
 .about-text h4{
     font-size: 23px;
     font-weight: 600;
     color: var(--text-color);
-    line-height: 1.7;
-    margin: 15px 0 30px;
+    line-height: 1.6;
+    margin: 15px 0 15px;
 }
 
 
 .about-text p {
     color: var(--second-color);
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 1.4;
     margin-bottom: 1rem;
 }
 
 
+/* ==============================================Skill Section============================================================ */
+
+.skills{
+    height: 100vh;
+    width: 100%;
+    padding: 15%;
+    display: flex;
+    align-items: center;
+   
+}
+
+.skill-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-text {
+    margin-bottom: 10px;
+}
+
+.skill-text h2 {
+    margin-bottom: 15px;
+}
+
+.skill-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-text li {
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.skill-text a{ 
+    margin-top: 10px;
+}
 
 /* ======================================================Project Section====================================================== */
 
 .projects{
-    background-image: url("/static/images/sa.jpg");
     height: 100vh;
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    justify-content: center;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+   
 }
 
 .main-text{
     text-align:center;
     margin-bottom: 0rem;
 }
+
 .main-text h2{
     font-size: var(--h2-font);
-    line-height: 0.1;
+    margin-top: 10px;
 }
 
-.projects-content{
+.projects-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     align-items: center;
     gap: 2.5rem;
-    margin-top: 5rem;
-    
+    margin-top: 2rem; 
 }
 
 .row{
-    /* position: relative;
-    overflow: hidden; */
+
     border-radius: 8px;
     cursor: pointer;
 }
@@ -340,15 +382,6 @@ header.sticky{
 
 .layer i{
     color: rgb(255, 255, 255);
-    /* margin-top: 20px;
-    font-size: 20px;
-    background:var(--text-color);
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%; */
 }
 
 .row:hover img{
@@ -361,21 +394,19 @@ header.sticky{
 
 /* ======================================================Contact Section====================================================== */
 
+
+
 .contact{
-    background-image: url("/static/images/mr3.png");
+    
     height: 100vh;
     width: 100%;
-    background-size: cover;
-    background-position: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    margin-bottom: 5rem;
-    /* position: relative; */
-    /* display: flex; */
-    /* justify-content: flex-start;
-    flex-wrap: wrap; */
+    padding: 0% 20%;
+   
+
 }
 
 .contact-text h4{
@@ -469,14 +500,18 @@ header.sticky{
 }
 /* ==================================END===================================================================== */
 .end{
-    padding: 20px 15%;
+    height: 3vh;
+    padding: 0% 25%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-
+    
 }
+
+
+
 .last-text p{
     color: var(--second-color);
     font-size: 14px;
@@ -500,168 +535,3 @@ header.sticky{
 
 /* ================================================================================== */
 
-@media (max-width: 1480px) {
-    header{
-        padding: 12px 2.5%;
-        transition: .1s;
-    }
-    header.sticky{
-        padding: 10px 2.5%;
-        transition: .1s;
-    }
-    section{
-        padding: 110px 3% 60px;
-    }
-    .end{
-        padding: 15px 3%;
-    }
-}
-
-@media (max-width: 1100px) {
-    :root{
-        --big-font:2rem;
-        --h2-font:2rem;
-        --p-font:1rem;
-        transition: .1s;
-    }
-    .home-text h3{
-        font-size:2.5rem;
-    }
-    .home{
-        height: 87vh;
-    }
-    .about{
-        height: 87vh;
-
-    .projects{
-        height: 87vh;
-    }
-    .contact{
-        height: 87vh;
-    }
-
-    }
-
-}
-
-@media (max-width:920px){
-    .about{
-        grid-template-columns: 1fr;
-    }
-    .about-img{
-        text-align: center;
-        order: 1;
-    }
-    .about-img img{
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
-    .projects{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .contact{
-        grid-template-columns: 1fr;
-    }
-    .end{
-        padding-top: 25%;
-    }
-
-}
-
-@media (max-width:840px){
-    #menu-icon{
-        display: block;
-    }
-    .navlist{
-        position: absolute;
-        top: -1000px;
-        right: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--bg-color);
-        text-align: left;
-        transition: all .45s ease;
-    }
-    .navlist a{
-        display: block;
-        margin: 16px;
-        font-size: 20px;
-        transition: all .45s ease;
-        color: var(--text-color);
-    }
-    .navlist a:hover{
-        color: var(--main-color);
-    }
-    .navlist.open{
-        top: 100%;
-    }
-    .end{
-        padding-top: 30%;
-    }
-}
-
-@media (max-width:666px){
-    .projects-content{
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-    .end{
-        padding-top: 30%;
-    }
-    .last-text{
-        padding-top: 30px;
-    }
-
-}
-
-@media (max-width:600px){
-    .end{
-        padding-top: 40%;
-    }
-
-}
-
-@media (max-width:424px){
-    .projects-content {
-        grid-template-columns: repeat(2,1fr); /* Set projects content to a single column */
-        display: grid;
-    }
-    
-    .home-text h1{
-        font-size: 2rem;
-    }
-
-    }
-    .home{
-        height: 67vh;
-    }
-    .about{
-        height: 67vh;
-
-
-
-    .contact {
-        grid-column: 1 / -1; /* Span the full width of the grid */
-        grid-row: 3;
-    }
-
-    .end{
-        padding-top: 30%;
-    .last-text{
-        padding-top: 10px;
-    }
-    }
-
-}
-
-/* @media (max-width:336px){
-    .end{
-        padding-top: 70%;
-    .last-text{
-        padding-top: 30px;
-    }
-    }
-
-} */
