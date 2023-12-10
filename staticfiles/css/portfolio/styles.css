@@ -660,13 +660,14 @@ header.sticky{
     .home-text h1{
         font-size: 2rem;
     }
+    
 
     }
     .home{
-        height: 67vh;
+        height: 80vh;
     }
     .about{
-        height: 67vh;
+        height: 80vh;
 
 
 
@@ -676,7 +677,7 @@ header.sticky{
     }
 
     .end{
-        padding-top: 30%;
+        padding-top: 40%;
     .last-text{
         padding-top: 10px;
     }
